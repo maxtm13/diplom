@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9cca8442-7e40-4a08-a89c-2a10cb70fa21" name="bx-stud35.tmweb.ru" url="http://bx-stud35.tmweb.ru">
+        <fileTransfer rootFolder="/site" accessType="SFTP" host="bx-stud35.tmweb.ru" port="22" sshConfigId="ebc27e7f-0a6a-4566-b88b-de82b59d2a31" sshConfig="bx-stud35@bx-stud35.tmweb.ru:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
