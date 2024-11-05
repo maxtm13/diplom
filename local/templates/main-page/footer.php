@@ -63,19 +63,19 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
             </nav>
             <div class="footer__form">
                 <h2>подписаться на новости магазина go&ride</h2>
-                <form action="#">
-                    <div class="footer__form-wrp">
-                        <label>
-                            <input type="email" placeholder="Enter your Email adress" required>
-                            <span class="visually-hidden">email</span>
-                        </label>
-                        <button>подписаться</button>
-                    </div>
-                    <span>Продолжая, вы соглашаетесь с нашей политикой конфиденциальности.</span>
-                </form>
+<!--                <form action="#">-->
+<!--                    <div class="footer__form-wrp">-->
+<!--                        <label>-->
+<!--                            <input type="email" placeholder="Enter your Email adress" required>-->
+<!--                            <span class="visually-hidden">email</span>-->
+<!--                        </label>-->
+<!--                        <button>подписаться</button>-->
+<!--                    </div>-->
+<!--                    <span>Продолжая, вы соглашаетесь с нашей политикой конфиденциальности.</span>-->
+<!--                </form>-->
                 <?$APPLICATION->IncludeComponent(
                     "bitrix:subscribe.form",
-                    "",
+                    "subscribe",
                     Array(
                         "CACHE_TIME" => "3600",
                         "CACHE_TYPE" => "A",

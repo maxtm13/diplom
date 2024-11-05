@@ -1,6 +1,5 @@
-<?php if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
-{
-	die();
+<?php if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
+    die();
 }
 /** @var array $arParams */
 /** @var array $arResult */
@@ -14,48 +13,54 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 ?>
-<div class="subscribe-form"  id="subscribe-form">
-<?php
-$frame = $this->createFrame('subscribe-form', false)->begin();
-?>
-	<form action="<?=$arResult['FORM_ACTION']?>">
+<div class="subscribe-form" id="subscribe-form">
 
-	<?php foreach ($arResult['RUBRICS'] as $itemValue):?>
-		<label for="sf_RUB_ID_<?=$itemValue['ID']?>">
-			<input type="checkbox" name="sf_RUB_ID[]" id="sf_RUB_ID_<?=$itemValue['ID']?>" value="<?=$itemValue['ID']?>" <?php echo ($itemValue['CHECKED']) ? 'checked' : '';?> /> <?=$itemValue['NAME']?>
-		</label><br />
-	<?php endforeach;?>
+    <?php
+    $frame = $this->createFrame('subscribe-form', false)->begin();
+    ?>
+    <form id="subscribe" method="post">
+        <div class="footer__form-wrp">
+            <label>
+                <input type="email" name="email" placeholder="Enter your Email adress" required>
+                <span class="visually-hidden">email</span>
+            </label>
+            <button type="submit">подписаться</button>
+        </div>
+        <span>Продолжая, вы соглашаетесь с нашей политикой конфиденциальности.</span>
+        <div id="message"></div>
+    </form>
+    <?php
+    $frame->beginStub();
+    ?>
+    <form id="subscribe" method="post">
 
-		<table border="0" cellspacing="0" cellpadding="2" align="center">
-			<tr>
-				<td><input type="text" name="sf_EMAIL" size="20" value="<?=$arResult['EMAIL']?>" title="<?=GetMessage('subscr_form_email_title')?>" /></td>
-			</tr>
-			<tr>
-				<td align="right"><input type="submit" name="OK" value="<?=GetMessage('subscr_form_button')?>" /></td>
-			</tr>
-		</table>
-	</form>
-<?php
-$frame->beginStub();
-?>
-	<form action="<?=$arResult['FORM_ACTION']?>">
+        <div class="footer__form-wrp">
+            <label>
+                <input type="email" name="email" placeholder="Enter your Email adress" required>
+                <span class="visually-hidden">email</span>
+            </label>
+            <button type="submit">подписаться</button>
+        </div>
+        <span>Продолжая, вы соглашаетесь с нашей политикой конфиденциальности.</span>
+        <div id="message"></div>
+    </form>
 
-		<?php foreach ($arResult['RUBRICS'] as $itemValue):?>
-			<label for="sf_RUB_ID_<?=$itemValue['ID']?>">
-				<input type="checkbox" name="sf_RUB_ID[]" id="sf_RUB_ID_<?=$itemValue['ID']?>" value="<?=$itemValue['ID']?>" /> <?=$itemValue['NAME']?>
-			</label><br />
-		<?php endforeach;?>
-
-		<table border="0" cellspacing="0" cellpadding="2" align="center">
-			<tr>
-				<td><input type="text" name="sf_EMAIL" size="20" value="" title="<?=GetMessage('subscr_form_email_title')?>" /></td>
-			</tr>
-			<tr>
-				<td align="right"><input type="submit" name="OK" value="<?=GetMessage('subscr_form_button')?>" /></td>
-			</tr>
-		</table>
-	</form>
-<?php
-$frame->end();
-?>
+    <?php
+    $frame->end();
+    ?>
 </div>
+<script>
+    $('form').on('submit',function (){
+        $.ajax({
+            url: '/ajax/subscribe.php',
+            method:'post',
+            dataType: 'html',
+            data: $(this).serialize(),
+            success: function(responsedata){
+                $('#message').html(responsedata);
+            }
+        })
+        return false;
+    })
+
+</script>
