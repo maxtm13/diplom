@@ -1,3 +1,1 @@
-
-<img src="./img/ride-with-us-bycicle.jpg" alt="ride-us-pic">
-            <a href="#">по городу</a>
+<img alt="ride-us-pic" src="./img/ride-with-us-bycicle.jpg"> <a href="#">по городу</a>

@@ -36,7 +36,7 @@
       <option name="outputFromStdout" value="false" />
       <option name="program" value="csso" />
       <option name="runOnExternalChanges" value="true" />
-      <option name="scopeName" value="Project Files" />
+      <option name="scopeName" value="not min" />
       <option name="trackOnlyRoot" value="true" />
       <option name="workingDir" value="$FileDir$" />
       <envs />
@@ -56,7 +56,7 @@
       <option name="outputFromStdout" value="false" />
       <option name="program" value="uglifyjs" />
       <option name="runOnExternalChanges" value="true" />
-      <option name="scopeName" value="Project Files" />
+      <option name="scopeName" value="not min" />
       <option name="trackOnlyRoot" value="true" />
       <option name="workingDir" value="$FileDir$" />
       <envs />
