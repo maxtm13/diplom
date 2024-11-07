@@ -200,7 +200,7 @@ $containerName = 'container-'.$navParams['NavNum'];
                         <?
                         $APPLICATION->IncludeComponent(
                             'bitrix:catalog.item',
-                            'my_section',
+                            'item',
                             array(
                                 'RESULT' => array(
                                     'ITEM' => $item,
