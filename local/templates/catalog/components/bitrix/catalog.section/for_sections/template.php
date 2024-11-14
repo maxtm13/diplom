@@ -23,8 +23,12 @@ use Bitrix\Catalog\ProductTable;
  */
 
 $this->setFrameMode(true);
-$this->addExternalCss('/bitrix/css/main/bootstrap.css');
+//$this->addExternalCss('/bitrix/css/main/bootstrap.css');
 
+
+?>
+<h2><?= $arParams['PAGER_TITLE']?></h2>
+<?php
 if (!empty($arResult['NAV_RESULT']))
 {
 	$navParams =  array(
@@ -140,8 +144,9 @@ if (!isset($arParams['HIDE_SECTION_DESCRIPTION']) || $arParams['HIDE_SECTION_DES
 }
 ?>
 
-<div class="catalog-section bx-<?=$arParams['TEMPLATE_THEME']?>" data-entity="<?=$containerName?>">
+<div class="slider slick-good-slider catalog-section bx-<?=$arParams['TEMPLATE_THEME']?>" data-entity="<?=$containerName?>">
 	<?
+
 	if (!empty($arResult['ITEMS']) && !empty($arResult['ITEM_ROWS']))
 	{
 		$generalParams = [
@@ -209,43 +214,33 @@ if (!isset($arParams['HIDE_SECTION_DESCRIPTION']) || $arParams['HIDE_SECTION_DES
 		{
 			$rowItems = array_splice($arResult['ITEMS'], 0, $rowData['COUNT']);
 			?>
-			<div class="row <?=$rowData['CLASS']?>" data-entity="items-row">
+			<div class="slider__item row <?=$rowData['CLASS']?>" data-entity="items-row">
 				<?
 				switch ($rowData['VARIANT'])
 				{
 					case 0:
 						?>
-						<div class="col-xs-12 product-item-small-card">
-							<div class="row">
-								<div class="col-xs-12 product-item-big-card">
-									<div class="row">
-										<div class="col-md-12">
-											<?
-											$item = reset($rowItems);
-											$APPLICATION->IncludeComponent(
-												'bitrix:catalog.item',
-												'',
-												array(
-													'RESULT' => array(
-														'ITEM' => $item,
-														'AREA_ID' => $areaIds[$item['ID']],
-														'TYPE' => $rowData['TYPE'],
-														'BIG_LABEL' => 'N',
-														'BIG_DISCOUNT_PERCENT' => 'N',
-														'BIG_BUTTONS' => 'N',
-														'SCALABLE' => 'N'
-													),
-													'PARAMS' => $generalParams + $itemParameters[$item['ID']],
-												),
-												$component,
-												array('HIDE_ICONS' => 'Y')
-											);
-											?>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						<?
+						$item = reset($rowItems);
+						$APPLICATION->IncludeComponent(
+							'bitrix:catalog.item',
+							'item',
+							array(
+								'RESULT' => array(
+									'ITEM' => $item,
+									'AREA_ID' => $areaIds[$item['ID']],
+									'TYPE' => $rowData['TYPE'],
+									'BIG_LABEL' => 'N',
+									'BIG_DISCOUNT_PERCENT' => 'N',
+									'BIG_BUTTONS' => 'N',
+									'SCALABLE' => 'N'
+								),
+								'PARAMS' => $generalParams + $itemParameters[$item['ID']],
+							),
+							$component,
+							array('HIDE_ICONS' => 'Y')
+						);
+						?>
 						<?
 						break;
 
@@ -301,8 +296,11 @@ if (!isset($arParams['HIDE_SECTION_DESCRIPTION']) || $arParams['HIDE_SECTION_DES
 									?>
 									<div class="col-sm-4 product-item-big-card">
 										<div class="row">
-											<div class="col-md-12">
+											<div class="col-md-12 rrr">
 												<?
+
+
+
 												$APPLICATION->IncludeComponent(
 													'bitrix:catalog.item',
 													'',
@@ -343,6 +341,9 @@ if (!isset($arParams['HIDE_SECTION_DESCRIPTION']) || $arParams['HIDE_SECTION_DES
 									?>
 									<div class="col-xs-6 col-md-3">
 										<?
+
+
+
 										$APPLICATION->IncludeComponent(
 											'bitrix:catalog.item',
 											'',
@@ -748,7 +749,7 @@ if ($showLazyLoad)
 	?>
 	<div class="row bx-<?=$arParams['TEMPLATE_THEME']?>">
 		<div class="btn btn-default btn-lg center-block" style="margin: 15px;"
-			data-use="show-more-<?=$navParams['NavNum']?>">
+			 data-use="show-more-<?=$navParams['NavNum']?>">
 			<?=$arParams['MESS_BTN_LAZY_LOAD']?>
 		</div>
 	</div>

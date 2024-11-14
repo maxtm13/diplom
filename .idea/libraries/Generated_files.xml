@@ -4,11 +4,13 @@
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/.default/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/item/script.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/item_view/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/my_section/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.products.viewed/default/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.products.viewed/viewed/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.section/.default/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.section/catalog-sections/script.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.section/for_sections/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.section/sect/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/menu/horizontal_multilevel1/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/js/jquery.min.js" />
@@ -16,6 +18,7 @@
         <item url="file://$PROJECT_DIR$/local/templates/catalog/js/slick.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/main-page/components/bitrix/catalog.products.viewed/viewed_on_main/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/main-page/components/bitrix/catalog.products.viewed/viewed_on_main/script.min.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/main-page/components/bitrix/catalog.section/for_sections/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/main-page/js/jquery.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/main-page/js/scripts.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/main-page/js/slick.min.js" />
@@ -24,11 +27,13 @@
     <CLASSES>
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/.default/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/item/script.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/item_view/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/my_section/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.products.viewed/default/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.products.viewed/viewed/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.section/.default/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.section/catalog-sections/script.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.section/for_sections/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.section/sect/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/menu/horizontal_multilevel1/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/js/jquery.min.js" />
@@ -36,6 +41,7 @@
       <root url="file://$PROJECT_DIR$/local/templates/catalog/js/slick.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/main-page/components/bitrix/catalog.products.viewed/viewed_on_main/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/main-page/components/bitrix/catalog.products.viewed/viewed_on_main/script.min.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/main-page/components/bitrix/catalog.section/for_sections/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/main-page/js/jquery.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/main-page/js/scripts.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/main-page/js/slick.min.js" />

@@ -142,7 +142,7 @@ $containerName = 'catalog-products-viewed-container';
 				$item = reset($rowItems);
 				$APPLICATION->IncludeComponent(
 					'bitrix:catalog.item',
-					'',
+					'item_view',
 					array(
 						'RESULT' => array(
 							'ITEM' => $item,
