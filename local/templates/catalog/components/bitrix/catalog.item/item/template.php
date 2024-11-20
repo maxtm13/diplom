@@ -281,7 +281,8 @@ if (isset($arResult['ITEM']))
 		$jsParams['USE_ENHANCED_ECOMMERCE'] = $arParams['USE_ENHANCED_ECOMMERCE'];
 		$jsParams['DATA_LAYER_NAME'] = $arParams['DATA_LAYER_NAME'];
 		$jsParams['BRAND_PROPERTY'] = !empty($item['DISPLAY_PROPERTIES'][$arParams['BRAND_PROPERTY']])
-			? $item['DISPLAY_PROPERTIES'][$arParams['BRAND_PROPERTY']]['DISPLAY_VALUE']
+			?
+			$item['DISPLAY_PROPERTIES'][$arParams['BRAND_PROPERTY']]['DISPLAY_VALUE']
 			: null;
 
 		$jsParams['IS_FACEBOOK_CONVERSION_CUSTOMIZE_PRODUCT_EVENT_ENABLED'] =
@@ -302,9 +303,9 @@ if (isset($arResult['ITEM']))
 			$templateData['ITEM']['JS_OFFERS'] = $item['JS_OFFERS'];
 		}
 		?>
-		<script>
-			var <?=$obName?> = new JCCatalogItem(<?=CUtil::PhpToJSObject($jsParams, false, true)?>);
-		</script>
+<!--		<script>-->
+<!--			var --><?php //=$obName?>// = new JCCatalogItem(<?php //=CUtil::PhpToJSObject($jsParams, false, true)?>//);
+<!--		</script>-->
 	<?
 	unset($item, $actualItem, $minOffer, $itemIds, $jsParams);
 }

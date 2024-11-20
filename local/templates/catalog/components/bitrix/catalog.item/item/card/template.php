@@ -35,6 +35,8 @@ use \Bitrix\Main\Localization\Loc;
                         </div>
                     </div>
  */
+
+
 ?>
 <div class="slider__item-wrp">
 

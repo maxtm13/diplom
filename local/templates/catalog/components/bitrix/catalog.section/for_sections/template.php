@@ -29,33 +29,13 @@ $this->setFrameMode(true);
 ?>
 <h2><?= $arParams['PAGER_TITLE']?></h2>
 <?php
-if (!empty($arResult['NAV_RESULT']))
-{
-	$navParams =  array(
-		'NavPageCount' => $arResult['NAV_RESULT']->NavPageCount,
-		'NavPageNomer' => $arResult['NAV_RESULT']->NavPageNomer,
-		'NavNum' => $arResult['NAV_RESULT']->NavNum
-	);
-}
-else
-{
-	$navParams = array(
-		'NavPageCount' => 1,
-		'NavPageNomer' => 1,
-		'NavNum' => $this->randString()
-	);
-}
+
 
 $showTopPager = false;
 $showBottomPager = false;
 $showLazyLoad = false;
 
-if ($arParams['PAGE_ELEMENT_COUNT'] > 0 && $navParams['NavPageCount'] > 1)
-{
-	$showTopPager = $arParams['DISPLAY_TOP_PAGER'];
-	$showBottomPager = $arParams['DISPLAY_BOTTOM_PAGER'];
-	$showLazyLoad = $arParams['LAZY_LOAD'] === 'Y' && $navParams['NavPageNomer'] != $navParams['NavPageCount'];
-}
+
 
 $templateLibrary = array('popup', 'ajax', 'fx');
 $currencyList = '';
