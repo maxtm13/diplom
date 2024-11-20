@@ -143,7 +143,7 @@ $containerName = 'catalog-top-container';
 											$item = reset($rowItems);
 											$APPLICATION->IncludeComponent(
 												'bitrix:catalog.item',
-												'test',
+												'my_section',
 												array(
 													'RESULT' => array(
 														'ITEM' => $item,

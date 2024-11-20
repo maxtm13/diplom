@@ -134,9 +134,8 @@ foreach ($sections as $key=> $section) {
 		"MESS_NOT_AVAILABLE" => "Нет в наличии",
 		"MESS_NOT_AVAILABLE_SERVICE" => "Недоступно",
 		"OFFERS_FIELD_CODE" => array(
-			0 => "ID",
-			1 => "NAME",
-			2 => "",
+			0 => "",
+			1 => "",
 		),
 		"OFFERS_LIMIT" => "5",
 		"OFFERS_SORT_FIELD" => "sort",
