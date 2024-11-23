@@ -6,6 +6,7 @@
         <item url="file://$PROJECT_DIR$/bitrix/modules/asd.iblock/install/js/asd.iblock/admin/elementuilist.min.js" />
         <item url="file://$PROJECT_DIR$/bitrix/modules/asd.iblock/install/js/asd.iblock/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/.default/script.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/add2basket/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/item/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/item_view/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/my_section/script.min.js" />
@@ -15,6 +16,9 @@
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.section/catalog-sections/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.section/for_sections/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.section/sect/script.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.top/viewed/banner/script.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.top/viewed/section/script.min.js" />
+        <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.top/viewed/slider/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.top/viewed_top/banner/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.top/viewed_top/section/script.min.js" />
         <item url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.top/viewed_top/slider/script.min.js" />
@@ -34,6 +38,7 @@
       <root url="file://$PROJECT_DIR$/bitrix/modules/asd.iblock/install/js/asd.iblock/admin/elementuilist.min.js" />
       <root url="file://$PROJECT_DIR$/bitrix/modules/asd.iblock/install/js/asd.iblock/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/.default/script.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/add2basket/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/item/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/item_view/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.item/my_section/script.min.js" />
@@ -43,6 +48,9 @@
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.section/catalog-sections/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.section/for_sections/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.section/sect/script.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.top/viewed/banner/script.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.top/viewed/section/script.min.js" />
+      <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.top/viewed/slider/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.top/viewed_top/banner/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.top/viewed_top/section/script.min.js" />
       <root url="file://$PROJECT_DIR$/local/templates/catalog/components/bitrix/catalog.top/viewed_top/slider/script.min.js" />

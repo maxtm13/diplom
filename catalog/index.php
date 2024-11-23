@@ -96,9 +96,9 @@ foreach ($sections as $key=> $section) {
 );*/?>
             <?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.top", 
-	"viewed_top", 
+	"viewed",
 	array(
-		"ACTION_VARIABLE" => "action",
+		"ACTION_VARIABLE" => "myAaction",
 		"ADD_PICT_PROP" => "-",
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
 		"ADD_TO_BASKET_ACTION" => "BUY",
@@ -149,7 +149,7 @@ foreach ($sections as $key=> $section) {
 		"PRICE_VAT_INCLUDE" => "Y",
 		"PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons",
 		"PRODUCT_DISPLAY_MODE" => "N",
-		"PRODUCT_ID_VARIABLE" => "id",
+		"PRODUCT_ID_VARIABLE" => "myID",
 		"PRODUCT_PROPS_VARIABLE" => "prop",
 		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
 		"PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'0','BIG_DATA':false},{'VARIANT':'0','BIG_DATA':false},{'VARIANT':'0','BIG_DATA':false},{'VARIANT':'0','BIG_DATA':false},{'VARIANT':'0','BIG_DATA':false},{'VARIANT':'0','BIG_DATA':false},{'VARIANT':'0','BIG_DATA':false},{'VARIANT':'0','BIG_DATA':false},{'VARIANT':'0','BIG_DATA':false}]",
@@ -184,11 +184,14 @@ foreach ($sections as $key=> $section) {
     <section class="products products--catalog">
         <div class="container">
             <?
+            $actionVar = 'action-'.$key;
+            $idVar= 'id-'.$key;
+
             $APPLICATION->IncludeComponent(
                 "bitrix:catalog.section",
-                "for_sections",
+                "",
                 array(
-                    "ACTION_VARIABLE" => "action",
+                    "ACTION_VARIABLE" =>  $actionVar,
                     "ADD_PICT_PROP" => "-",
                     "ADD_PROPERTIES_TO_BASKET" => "Y",
                     "ADD_SECTIONS_CHAIN" => "N",
@@ -252,7 +255,7 @@ foreach ($sections as $key=> $section) {
                     "PRICE_CODE" => array(),
                     "PRICE_VAT_INCLUDE" => "Y",
                     "PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons",
-                    "PRODUCT_ID_VARIABLE" => "id",
+                    "PRODUCT_ID_VARIABLE" => $idVar,
                     "PRODUCT_PROPS_VARIABLE" => "prop",
                     "PRODUCT_QUANTITY_VARIABLE" => "quantity",
                     "PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'0','BIG_DATA':false},{'VARIANT':'0','BIG_DATA':false},{'VARIANT':'0','BIG_DATA':false},{'VARIANT':'0','BIG_DATA':false},{'VARIANT':'0','BIG_DATA':false},{'VARIANT':'0','BIG_DATA':false},{'VARIANT':'0','BIG_DATA':false},{'VARIANT':'0','BIG_DATA':false},{'VARIANT':'0','BIG_DATA':false}]",
